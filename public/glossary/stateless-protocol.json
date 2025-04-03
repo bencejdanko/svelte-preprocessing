@@ -1,0 +1,4 @@
+{
+    "term": "Stateless Protocol",
+    "definition": "A stateless protocol is a communication protocol in which the receiver must not retain session state from previous requests. The sender transfers relevant session state to the receiver in such a way that every request can be understood in isolation, that is without reference to session state from previous requests retained by the receiver."
+}

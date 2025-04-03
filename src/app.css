@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+
+    --background: 0 0% 0%;
+    --foreground: 0 0% 63%;
+ 
+    --muted: 0 0% 8%;
+    --muted-foreground: 206 3% 53%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+ 
+    --primary: 0 40% 98%;
+    --primary-foreground: 0 0% 12%;
+ 
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 206 3% 53%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --ring: 212.7 26.8% 83.9%;
+  }
+ 
+  [data-theme='dark'] {
+
+
+    --background: 240 11% 96%;
+    --foreground: 222.2 84% 4.9%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 72.2% 50.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@font-face {
+  font-family: 'berkeley';
+  src: url('fonts/BerkeleyMono-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'chomsky';
+  src: url('fonts/Chomsky-399c.woff')
+}
+
+@font-face {
+  font-family: 'clacon';
+  src: url('fonts/clacon2.woff2');
+}
+
+@font-face {
+  font-family: "ebgaramond";
+  src: url('fonts/EBGaramond-VariableFont_wght.ttf')
+}
+
+@font-face {
+  font-family: "inter";
+  src: url('fonts/Inter.var.woff2')
+}
+
+@font-face {
+  font-family: 'sourcecodepro';
+  src: url('fonts/SourceCodePro-Regular.woff2')
+}
+
+body {
+  background-image: var(--background-image);
+}
+
+p {
+  @apply p-2
+}
+
+h1 {
+  @apply text-2xl text-primary underline decoration-1 underline-offset-4 p-2;
+}
+
+h2 {
+  @apply text-xl text-primary font-bold p-2;
+}
+
+h3 {
+  @apply text-lg p-2;
+}
+
+code {
+  @apply font-mono bg-secondary text-sm rounded p-1;
+}
+
+a {
+  @apply text-[#3366CC] underline
+}
+
+blockquote {
+  @apply text-[#4BD5EE] p-2 text-center pl-5 bg-black rounded font-[clacon] m-5;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.smiley {
+  @apply rounded inline-block p-1;
+  background-color: hsl(240 11% 96%);
+}
+
+.images {
+  @apply text-center rounded mt-5 mb-5;
+}
+
+.images img {
+  margin: 0 auto;
+}

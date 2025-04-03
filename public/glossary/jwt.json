@@ -1,0 +1,4 @@
+{
+    "term": "JWT (Javascript Web Token",
+    "definition": "JSON Web Tokens (JWT) are compact, URL-safe tokens used for securely transmitting information between parties as a JSON object. The token is mainly composed of header, payload, signature."
+}
