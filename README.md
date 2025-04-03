@@ -1,6 +1,6 @@
 # svelte-preprocessing
 
-An experimental personal website, where a custom markdown preprocessor was plugged in. So you could write something like:
+An old experimental personal website of mine, where a custom markdown preprocessor was plugged in. So you could write something like:
 
 ```html
 <template lang=1>
